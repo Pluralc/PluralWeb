@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("Peacock.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+a {
+font-family: figtree;
+text-decoration-line: none;
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+color: #F0E2D7;
+font-size: 28px;
+
+}
+
+a:hover {
+    color: -webkit-link;
+    text-decoration-line: none;
+    color: #94FFE5;
+    transition: ease-in-out 400ms;
+}
