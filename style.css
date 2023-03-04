@@ -17,6 +17,8 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    overscroll-behavior: none;
   }
 
 
@@ -28,22 +30,33 @@ img {
     width: 150px;
 }
 
-a {
-font-family: figtree;
-text-decoration-line: none;
-position: absolute;
-top: 90%;
-left: 50%;
-transform: translate(-50%, -50%);
 
-color: #F0E2D7;
-font-size: 28px;
-
+/* Position and style the links */
+.links {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	width: 400px;
 }
 
-a:hover {
-    color: -webkit-link;
-    text-decoration-line: none;
-    color: #94FFE5;
-    transition: ease-in-out 400ms;
+.links a {
+	display: block;
+	padding: 10px 20px;
+	font-family: 'Figtree', sans-serif;
+	font-size: 29px;
+	text-decoration: none;
+	color: #F0E2D7;
+}
+
+.links a:hover {
+  transition: color 0.5s ease;
+	color: #135847;
+}
+
+/* Add space between links */
+/* .links a + a {
+	margin-left: px;
 }
